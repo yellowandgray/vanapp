@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vanapp/vandetails.dart';
 
 class Reportpage extends StatefulWidget {
   const Reportpage({Key? key}) : super(key: key);
@@ -28,62 +29,68 @@ class _MyHomePageState extends State<Reportpage> {
       body: ListView(
         children: [
           Padding(
-            padding:
-                const EdgeInsets.all(20.0), // Set padding before the Container
-            child: Container(
-              padding: const EdgeInsets.all(20.0),
-              width: double.infinity,
-              height: 120.0,
-              decoration: BoxDecoration(
-                color: const Color(0xFFFFFFF0),
-                borderRadius: BorderRadius.circular(12.0),
-                border: Border.all(
-                  // Set the border here
-                  color:
-                      Colors.black, // Choose the color you want for the border
-                  width: 1.0, // Set the border width
+              padding: const EdgeInsets.all(
+                  20.0), // Set padding before the Container
+              child: GestureDetector(
+                onTap: () {
+                  // Navigate to the van details page when the container is tapped
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) =>
+                        const Vandetails(), // Replace with the actual page you want to navigate to
+                  ));
+                },
+                child: Container(
+                  padding: const EdgeInsets.all(20.0),
+                  width: double.infinity,
+                  height: 100.0,
+                  decoration: BoxDecoration(
+                    color: const Color(0xFFFFFFF0),
+                    borderRadius: BorderRadius.circular(12.0),
+                    border: Border.all(
+                      color: Colors.black,
+                      width: 1.0,
+                    ),
+                  ),
+                  child: Stack(
+                    children: <Widget>[
+                      Positioned(
+                        top: 0,
+                        left: 20,
+                        child: Image.asset(
+                          'img/van-01 copy.png',
+                          width: 100,
+                          height: 60,
+                          fit: BoxFit.fill,
+                        ),
+                      ),
+                      const Positioned(
+                        top: 0,
+                        left: 150,
+                        child: Text(
+                          'Reg. No: TN 20 AQ 7909',
+                          style: TextStyle(fontSize: 14, color: Colors.black),
+                        ),
+                      ),
+                      const Positioned(
+                        top: 22,
+                        left: 150,
+                        child: Text(
+                          'Driver: Mani',
+                          style: TextStyle(fontSize: 14, color: Colors.black),
+                        ),
+                      ),
+                      const Positioned(
+                        top: 45,
+                        left: 150,
+                        child: Text(
+                          'Total Seats: 32+1',
+                          style: TextStyle(fontSize: 14, color: Colors.black),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
-              ),
-              child: Stack(
-                children: <Widget>[
-                  Positioned(
-                    top: 20,
-                    left: 20,
-                    child: Image.asset(
-                      'img/van-01 copy.png',
-                      width: 80,
-                      height: 40,
-                      fit: BoxFit.fill,
-                    ),
-                  ),
-                  const Positioned(
-                    top: 15,
-                    left: 150,
-                    child: Text(
-                      'Reg. No: TN 20 AQ 7909',
-                      style: TextStyle(fontSize: 14, color: Colors.black),
-                    ),
-                  ),
-                  const Positioned(
-                    top: 35,
-                    left: 150,
-                    child: Text(
-                      'Driver: Mani',
-                      style: TextStyle(fontSize: 14, color: Colors.black),
-                    ),
-                  ),
-                  const Positioned(
-                    top: 55,
-                    left: 150,
-                    child: Text(
-                      'Total Seats: 32+1',
-                      style: TextStyle(fontSize: 14, color: Colors.black),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
+              )),
           Padding(
             padding: const EdgeInsets.only(left: 20.0, right: 20),
             child: Row(
