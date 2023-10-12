@@ -71,14 +71,6 @@ class _AdddriverState extends State<AddRoute> {
         title: const Text('Add Route'),
         titleTextStyle:
             const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back), // Back arrow icon
-          onPressed: () {
-            Navigator.of(context).pushReplacement(
-              MaterialPageRoute(builder: (context) => const MyHomePage()),
-            );
-          },
-        ),
       ),
       body: Padding(
         padding: const EdgeInsets.only(left: 20.0, right: 20),

@@ -5,8 +5,6 @@ import 'package:image_picker/image_picker.dart';
 import 'dart:io';
 import 'package:path_provider/path_provider.dart';
 
-import 'home_page.dart';
-
 class AddDriver extends StatefulWidget {
   const AddDriver({Key? key}) : super(key: key);
 
@@ -51,14 +49,6 @@ class _AddDriverState extends State<AddDriver> {
         title: const Text('Add Driver Details'),
         titleTextStyle:
             const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back), // Back arrow icon
-          onPressed: () {
-            Navigator.of(context).pushReplacement(
-              MaterialPageRoute(builder: (context) => const MyHomePage()),
-            );
-          },
-        ),
       ),
       body: Padding(
         padding: const EdgeInsets.only(left: 20.0, right: 20),

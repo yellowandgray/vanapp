@@ -50,6 +50,7 @@ class MyTable extends StatefulWidget {
   const MyTable({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _MyTableState createState() => _MyTableState();
 }
 
@@ -208,7 +209,7 @@ class _MyTableState extends State<MyTable> {
                           });
                           textController.text = newValue!;
                           textController6.text =
-                              dropdownOptionss[options.indexOf(newValue!)]!;
+                              dropdownOptionss[options.indexOf(newValue)];
                         },
                         items: options.map((String value) {
                           return DropdownMenuItem<String>(
@@ -322,7 +323,7 @@ class _MyTableState extends State<MyTable> {
                     ),
                   ],
                 ),
-                const SizedBox(height: 5),
+                const SizedBox(height: 10),
                 Row(
                   children: [
                     Expanded(
@@ -368,7 +369,7 @@ class _MyTableState extends State<MyTable> {
                     ),
                   ],
                 ),
-                const SizedBox(height: 5),
+                const SizedBox(height: 10),
                 Row(
                   children: [
                     Expanded(
@@ -414,7 +415,7 @@ class _MyTableState extends State<MyTable> {
                     ),
                   ],
                 ),
-                const SizedBox(height: 5),
+                const SizedBox(height: 0),
                 Row(
                   children: [
                     Expanded(
@@ -521,13 +522,23 @@ class _MyTableState extends State<MyTable> {
             itemBuilder: (context, index) {
               List<String> rowData = dataModel.dataList[index].split('|');
               return Padding(
-                padding: const EdgeInsets.symmetric(vertical: 4.0),
-                child: Card(
-                  margin: const EdgeInsets.only(left: 20.0, right: 20),
-                  color: const Color(0xFFfffff0),
+                padding: const EdgeInsets.symmetric(vertical: 2.0),
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: const Color(
+                        0xFFFFFFF0), // Set your desired background color here
+                    border: Border.all(
+                      color: Colors.black, // Set your desired border color
+                      width: 1.0, // Set the width of the border
+                    ),
+                    borderRadius: BorderRadius.circular(
+                        10.0), // Set your desired border radius
+                  ),
+                  margin:
+                      const EdgeInsets.only(left: 20.0, right: 20, bottom: 10),
                   child: Padding(
-                    padding: const EdgeInsets.all(
-                        5.0), // Add the desired padding here
+                    padding: const EdgeInsets.only(
+                        top: 8.0), // Add the desired padding here
                     child: ListTile(
                       subtitle: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -546,11 +557,12 @@ class _MyTableState extends State<MyTable> {
                                 ),
                               ),
                               const SizedBox(width: 8),
-                              Image.asset('img/driver.png',
+                              Image.asset('img/driver1.png',
                                   width: 30, height: 30),
                               const SizedBox(width: 8),
                               Expanded(
                                 child: Text(
+                                  // ignore: unnecessary_string_interpolations
                                   '${rowData[1]}',
                                   style: const TextStyle(
                                     fontSize: 16, // Increase the font size
@@ -565,6 +577,7 @@ class _MyTableState extends State<MyTable> {
                               const SizedBox(width: 8),
                               Expanded(
                                 child: Text(
+                                  // ignore: unnecessary_string_interpolations
                                   '${rowData[2]}',
                                   style: const TextStyle(
                                     fontSize: 16, // Increase the font size
@@ -595,6 +608,7 @@ class _MyTableState extends State<MyTable> {
                               const SizedBox(width: 8),
                               Expanded(
                                 child: Text(
+                                  // ignore: unnecessary_string_interpolations
                                   '${rowData[3]}',
                                   style: const TextStyle(
                                     fontSize: 16, // Increase the font size
@@ -609,6 +623,7 @@ class _MyTableState extends State<MyTable> {
                               const SizedBox(width: 8),
                               Expanded(
                                 child: Text(
+                                  // ignore: unnecessary_string_interpolations
                                   '${rowData[5]}',
                                   style: const TextStyle(
                                     fontSize: 16, // Increase the font size

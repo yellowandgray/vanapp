@@ -41,8 +41,7 @@ class RouteSheets extends StatelessWidget {
                 children: [
                   TableCell(
                     child: Container(
-                      color: const Color.fromARGB(
-                          255, 236, 236, 6), // Set the background color here
+                      color: Colors.grey[300], // Set the background color here
                       child: const Center(
                         child: SizedBox(
                           height: 40.0,
@@ -60,14 +59,13 @@ class RouteSheets extends StatelessWidget {
                   ),
                   TableCell(
                     child: Container(
-                      color: const Color.fromARGB(
-                          255, 236, 236, 6), // Set the background color here
+                      color: Colors.grey[300], // Set the background color here
                       child: const Center(
                         child: SizedBox(
                           height: 40.0, // Set the column height here
                           child: Center(
                             child: Text(
-                              'Van Reg.No.',
+                              'Van Reg. No.',
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                               ),
@@ -79,8 +77,7 @@ class RouteSheets extends StatelessWidget {
                   ),
                   TableCell(
                     child: Container(
-                      color: const Color.fromARGB(
-                          255, 236, 236, 6), // Set the background color here
+                      color: Colors.grey[300], // Set the background color here
                       child: const Center(
                         child: SizedBox(
                           height: 40.0, // Set the column height here
@@ -98,8 +95,7 @@ class RouteSheets extends StatelessWidget {
                   ),
                   TableCell(
                     child: Container(
-                      color: const Color.fromARGB(
-                          255, 236, 236, 6), // Set the background color here
+                      color: Colors.grey[300], // Set the background color here
                       child: const Center(
                         child: SizedBox(
                           height: 40.0, // Set the column height here

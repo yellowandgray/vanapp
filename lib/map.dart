@@ -91,14 +91,6 @@ class _MapPageState extends State<MapPage> {
         title: const Text('Map Van & Driver'),
         titleTextStyle:
             const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back), // Back arrow icon
-          onPressed: () {
-            Navigator.of(context).pushReplacement(
-              MaterialPageRoute(builder: (context) => const MyHomePage()),
-            );
-          },
-        ),
       ),
       body: SingleChildScrollView(
         child: Column(
