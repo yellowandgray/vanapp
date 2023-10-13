@@ -48,169 +48,266 @@ class Vandetails extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: <Widget>[
                         Padding(
-                          padding: const EdgeInsets.all(
-                              16.0), // Adjust padding as needed
-                          child: RichText(
-                            text: const TextSpan(
-                              style: TextStyle(
-                                fontSize: 16,
-                                color: Colors.black,
+                          padding: const EdgeInsets.all(16.0),
+                          child: Row(
+                            children: <Widget>[
+                              const Icon(
+                                Icons
+                                    .fiber_manual_record, // You can use a different icon if you prefer
+                                size: 16, // Adjust the size as needed
+                                color:
+                                    Colors.black, // Adjust the color as needed
                               ),
-                              children: <TextSpan>[
-                                TextSpan(
-                                  text: 'Route No: ',
-                                  style: TextStyle(fontWeight: FontWeight.bold),
-                                ),
-                                TextSpan(
-                                  text: '1',
-                                  style:
-                                      TextStyle(fontWeight: FontWeight.normal),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(
-                              16.0), // Adjust padding as needed
-                          child: RichText(
-                            text: const TextSpan(
-                              style: TextStyle(
-                                fontSize: 16,
-                                color: Colors.black,
-                              ),
-                              children: <TextSpan>[
-                                TextSpan(
-                                  text: 'Reg No: ',
-                                  style: TextStyle(fontWeight: FontWeight.bold),
-                                ),
-                                TextSpan(
-                                  text: 'TN 20 AP 5486',
-                                  style:
-                                      TextStyle(fontWeight: FontWeight.normal),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(
-                              16.0), // Adjust padding as needed
-                          child: RichText(
-                            text: const TextSpan(
-                              style: TextStyle(
-                                fontSize: 16, // Set the font size
-                                color: Colors.black, // Set the text color
-                              ),
-                              children: <TextSpan>[
-                                TextSpan(
-                                  text: 'Make Year: ',
-                                  style: TextStyle(fontWeight: FontWeight.bold),
-                                ),
-                                TextSpan(
-                                  text: 'SML/2007',
+                              const SizedBox(
+                                  width:
+                                      8), // Add some spacing between the icon and text
+                              RichText(
+                                text: const TextSpan(
                                   style: TextStyle(
-                                      fontWeight:
-                                          FontWeight.normal), // Set to normal
+                                    fontSize: 16,
+                                    color: Colors.black,
+                                  ),
+                                  children: <TextSpan>[
+                                    TextSpan(
+                                      text: 'Route No: ',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                    TextSpan(
+                                      text: '1',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ],
                                 ),
-                              ],
-                            ),
+                              ),
+                            ],
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.all(
-                              16.0), // Adjust padding as needed
-                          child: RichText(
-                            text: const TextSpan(
-                              style: TextStyle(
-                                fontSize: 16, // Set the font size
-                                color: Colors.black, // Set the text color
+                          padding: const EdgeInsets.all(16.0),
+                          child: Row(
+                            children: <Widget>[
+                              const Icon(
+                                Icons
+                                    .fiber_manual_record, // You can use a different icon if you prefer
+                                size: 16, // Adjust the size as needed
+                                color:
+                                    Colors.black, // Adjust the color as needed
                               ),
-                              children: <TextSpan>[
-                                TextSpan(
-                                  text: 'Total No.of Seat: ',
-                                  style: TextStyle(fontWeight: FontWeight.bold),
-                                ),
-                                TextSpan(
-                                  text: '32+1',
+                              const SizedBox(
+                                  width:
+                                      8), // Add some spacing between the icon and text
+                              RichText(
+                                text: const TextSpan(
                                   style: TextStyle(
-                                      fontWeight:
-                                          FontWeight.normal), // Set to normal
+                                    fontSize: 16,
+                                    color: Colors.black,
+                                  ),
+                                  children: <TextSpan>[
+                                    TextSpan(
+                                      text: 'Reg No: ',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                    TextSpan(
+                                      text: 'TN 20 AP 5486',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ],
                                 ),
-                              ],
-                            ),
+                              ),
+                            ],
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.all(
-                              16.0), // Adjust padding as needed
-                          child: RichText(
-                            text: const TextSpan(
-                              style: TextStyle(
-                                fontSize: 16, // Set the font size
-                                color: Colors.black, // Set the text color
+                          padding: const EdgeInsets.all(16.0),
+                          child: Row(
+                            children: <Widget>[
+                              const Icon(
+                                Icons
+                                    .fiber_manual_record, // You can use a different icon if you prefer
+                                size: 16, // Adjust the size as needed
+                                color:
+                                    Colors.black, // Adjust the color as needed
                               ),
-                              children: <TextSpan>[
-                                TextSpan(
-                                  text: 'Diesel Capacity Ltrs: ',
-                                  style: TextStyle(fontWeight: FontWeight.bold),
-                                ),
-                                TextSpan(
-                                  text: '90',
+                              const SizedBox(
+                                  width:
+                                      8), // Add some spacing between the icon and text
+                              RichText(
+                                text: const TextSpan(
                                   style: TextStyle(
-                                      fontWeight:
-                                          FontWeight.normal), // Set to normal
+                                    fontSize: 16, // Set the font size
+                                    color: Colors.black, // Set the text color
+                                  ),
+                                  children: <TextSpan>[
+                                    TextSpan(
+                                      text: 'Make Year: ',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                    TextSpan(
+                                      text: 'SML/2007',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight
+                                              .normal), // Set to normal
+                                    ),
+                                  ],
                                 ),
-                              ],
-                            ),
+                              ),
+                            ],
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.all(
-                              16.0), // Adjust padding as needed
-                          child: RichText(
-                            text: const TextSpan(
-                              style: TextStyle(
-                                fontSize: 16, // Set the font size
-                                color: Colors.black, // Set the text color
-                              ),
-                              children: <TextSpan>[
-                                TextSpan(
-                                  text: 'Engine No: ',
-                                  style: TextStyle(fontWeight: FontWeight.bold),
+                            padding: const EdgeInsets.all(16.0),
+                            child: Row(
+                              children: <Widget>[
+                                const Icon(
+                                  Icons
+                                      .fiber_manual_record, // You can use a different icon if you prefer
+                                  size: 16, // Adjust the size as needed
+                                  color: Colors
+                                      .black, // Adjust the color as needed
                                 ),
-                                TextSpan(
-                                  text: 'SLTEP112312',
-                                  style: TextStyle(
-                                      fontWeight:
-                                          FontWeight.normal), // Set to normal
+                                const SizedBox(
+                                    width:
+                                        8), // Add some spacing between the icon and text
+                                RichText(
+                                  text: const TextSpan(
+                                    style: TextStyle(
+                                      fontSize: 16, // Set the font size
+                                      color: Colors.black, // Set the text color
+                                    ),
+                                    children: <TextSpan>[
+                                      TextSpan(
+                                        text: 'Total No.of Seat: ',
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                      TextSpan(
+                                        text: '32+1',
+                                        style: TextStyle(
+                                            fontWeight: FontWeight
+                                                .normal), // Set to normal
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               ],
-                            ),
+                            )),
+                        Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: Row(
+                            children: <Widget>[
+                              const Icon(
+                                Icons
+                                    .fiber_manual_record, // You can use a different icon if you prefer
+                                size: 16, // Adjust the size as needed
+                                color:
+                                    Colors.black, // Adjust the color as needed
+                              ),
+                              const SizedBox(
+                                  width:
+                                      8), // Add some spacing between the icon and text
+                              RichText(
+                                text: const TextSpan(
+                                  style: TextStyle(
+                                    fontSize: 16, // Set the font size
+                                    color: Colors.black, // Set the text color
+                                  ),
+                                  children: <TextSpan>[
+                                    TextSpan(
+                                      text: 'Diesel Capacity Ltrs: ',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                    TextSpan(
+                                      text: '90',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight
+                                              .normal), // Set to normal
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.all(
-                              16.0), // Adjust padding as needed
-                          child: RichText(
-                            text: const TextSpan(
-                              style: TextStyle(
-                                fontSize: 16, // Set the font size
-                                color: Colors.black, // Set the text color
+                          padding: const EdgeInsets.all(16.0),
+                          child: Row(
+                            children: <Widget>[
+                              const Icon(
+                                Icons
+                                    .fiber_manual_record, // You can use a different icon if you prefer
+                                size: 16, // Adjust the size as needed
+                                color:
+                                    Colors.black, // Adjust the color as needed
                               ),
-                              children: <TextSpan>[
-                                TextSpan(
-                                  text: 'Chassis No: ',
-                                  style: TextStyle(fontWeight: FontWeight.bold),
-                                ),
-                                TextSpan(
-                                  text: 'OEZGL4GM011898',
+                              const SizedBox(
+                                  width:
+                                      8), // Add some spacing between the icon and text
+                              RichText(
+                                text: const TextSpan(
                                   style: TextStyle(
-                                      fontWeight:
-                                          FontWeight.normal), // Set to normal
+                                    fontSize: 16, // Set the font size
+                                    color: Colors.black, // Set the text color
+                                  ),
+                                  children: <TextSpan>[
+                                    TextSpan(
+                                      text: 'Engine No: ',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                    TextSpan(
+                                      text: 'SLTEP112312',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight
+                                              .normal), // Set to normal
+                                    ),
+                                  ],
                                 ),
-                              ],
-                            ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: Row(
+                            children: <Widget>[
+                              const Icon(
+                                Icons
+                                    .fiber_manual_record, // You can use a different icon if you prefer
+                                size: 16, // Adjust the size as needed
+                                color:
+                                    Colors.black, // Adjust the color as needed
+                              ),
+                              const SizedBox(
+                                  width:
+                                      8), // Add some spacing between the icon and text
+                              RichText(
+                                text: const TextSpan(
+                                  style: TextStyle(
+                                    fontSize: 16, // Set the font size
+                                    color: Colors.black, // Set the text color
+                                  ),
+                                  children: <TextSpan>[
+                                    TextSpan(
+                                      text: 'Chassis No: ',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                    TextSpan(
+                                      text: 'OEZGL4GM011898',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight
+                                              .normal), // Set to normal
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
                           ),
                         ),
                       ],

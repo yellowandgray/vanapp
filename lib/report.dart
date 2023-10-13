@@ -198,7 +198,10 @@ class _MyHomePageState extends State<Reportpage> {
                     child: Padding(
                       padding:
                           EdgeInsets.all(10.0), // Adjust the padding as needed
-                      child: Text('11/10/23'),
+                      child: Text(
+                        '11/10/23',
+                        textAlign: TextAlign.center,
+                      ),
                     ),
                   ),
                   TableCell(
@@ -208,6 +211,7 @@ class _MyHomePageState extends State<Reportpage> {
                           10.0), // Adjust the padding as needed
                       child: const Text(
                         '9:45 AM',
+                        textAlign: TextAlign.center,
                         style: TextStyle(
                           // backgroundColor: Colors
                           // Set the background color of the text
@@ -220,7 +224,10 @@ class _MyHomePageState extends State<Reportpage> {
                     child: Padding(
                       padding:
                           EdgeInsets.all(5.0), // Adjust the padding as needed
-                      child: Text('Because of repair'),
+                      child: Text(
+                        'Because of repair',
+                        textAlign: TextAlign.center,
+                      ),
                     ),
                   ),
                 ],
@@ -231,7 +238,10 @@ class _MyHomePageState extends State<Reportpage> {
                     child: Padding(
                       padding:
                           EdgeInsets.all(10.0), // Adjust the padding as needed
-                      child: Text('10/10/23'),
+                      child: Text(
+                        '10/10/23',
+                        textAlign: TextAlign.center,
+                      ),
                     ),
                   ),
                   TableCell(
@@ -241,6 +251,7 @@ class _MyHomePageState extends State<Reportpage> {
                           10.0), // Adjust the padding as needed
                       child: const Text(
                         '9:10 AM',
+                        textAlign: TextAlign.center,
                         style: TextStyle(
                           // backgroundColor: Colors
                           // Set the background color of the text
@@ -253,7 +264,10 @@ class _MyHomePageState extends State<Reportpage> {
                     child: Padding(
                       padding:
                           EdgeInsets.all(5.0), // Adjust the padding as needed
-                      child: Text('-'),
+                      child: Text(
+                        '-',
+                        textAlign: TextAlign.center,
+                      ),
                     ),
                   ),
                 ],
@@ -264,7 +278,10 @@ class _MyHomePageState extends State<Reportpage> {
                     child: Padding(
                       padding:
                           EdgeInsets.all(10.0), // Adjust the padding as needed
-                      child: Text('9/10/23'),
+                      child: Text(
+                        '9/10/23',
+                        textAlign: TextAlign.center,
+                      ),
                     ),
                   ),
                   TableCell(
@@ -274,6 +291,7 @@ class _MyHomePageState extends State<Reportpage> {
                           10.0), // Adjust the padding as needed
                       child: const Text(
                         '9:00 AM',
+                        textAlign: TextAlign.center,
                         style: TextStyle(
                           // backgroundColor: Colors
                           // Set the background color of the text
@@ -286,7 +304,10 @@ class _MyHomePageState extends State<Reportpage> {
                     child: Padding(
                       padding:
                           EdgeInsets.all(5.0), // Adjust the padding as needed
-                      child: Text('-'),
+                      child: Text(
+                        '-',
+                        textAlign: TextAlign.center,
+                      ),
                     ),
                   ),
                 ],
@@ -297,7 +318,10 @@ class _MyHomePageState extends State<Reportpage> {
                     child: Padding(
                       padding:
                           EdgeInsets.all(10.0), // Adjust the padding as needed
-                      child: Text('8/10/23'),
+                      child: Text(
+                        '8/10/23',
+                        textAlign: TextAlign.center,
+                      ),
                     ),
                   ),
                   TableCell(
@@ -307,6 +331,7 @@ class _MyHomePageState extends State<Reportpage> {
                           10.0), // Adjust the padding as needed
                       child: const Text(
                         '9:45 AM',
+                        textAlign: TextAlign.center,
                         style: TextStyle(
                           // backgroundColor: Colors
                           // Set the background color of the text
@@ -319,7 +344,10 @@ class _MyHomePageState extends State<Reportpage> {
                     child: Padding(
                       padding:
                           EdgeInsets.all(5.0), // Adjust the padding as needed
-                      child: Text('Because of repair'),
+                      child: Text(
+                        'Because of repair',
+                        textAlign: TextAlign.center,
+                      ),
                     ),
                   ),
                 ],
@@ -330,7 +358,10 @@ class _MyHomePageState extends State<Reportpage> {
                     child: Padding(
                       padding:
                           EdgeInsets.all(10.0), // Adjust the padding as needed
-                      child: Text('7/10/23'),
+                      child: Text(
+                        '7/10/23',
+                        textAlign: TextAlign.center,
+                      ),
                     ),
                   ),
                   TableCell(
@@ -340,6 +371,7 @@ class _MyHomePageState extends State<Reportpage> {
                           10.0), // Adjust the padding as needed
                       child: const Text(
                         '9:45 AM',
+                        textAlign: TextAlign.center,
                         style: TextStyle(
                           // backgroundColor: Colors
                           // Set the background color of the text
@@ -352,7 +384,10 @@ class _MyHomePageState extends State<Reportpage> {
                     child: Padding(
                       padding:
                           EdgeInsets.all(5.0), // Adjust the padding as needed
-                      child: Text('Because of repair'),
+                      child: Text(
+                        'Because of repair',
+                        textAlign: TextAlign.center,
+                      ),
                     ),
                   ),
                 ],

@@ -1,6 +1,7 @@
 // ignore_for_file: deprecated_member_use
 import 'package:flutter/material.dart';
 import 'package:vanapp/report.dart';
+import 'package:vanapp/vandetails.dart';
 
 class RouteSheets extends StatelessWidget {
   const RouteSheets({super.key});
@@ -124,12 +125,27 @@ class RouteSheets extends StatelessWidget {
                       ),
                     ),
                   ),
-                  const TableCell(
+                  TableCell(
                     verticalAlignment: TableCellVerticalAlignment.middle,
                     child: Center(
-                      child: Text(
-                        'TN 20 AQ 7909',
-                        textAlign: TextAlign.center,
+                      child: GestureDetector(
+                        onTap: () {
+                          // Navigate to the van details page when the container is tapped
+                          Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) =>
+                                const Vandetails(), // Replace with the actual page you want to navigate to
+                          ));
+                        },
+                        child: const Text(
+                          'TN 20 AQ 7909',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            decoration: TextDecoration
+                                .underline, // Add underline to make it look like a link
+                            color: Colors
+                                .blue, // Change the text color to indicate a link
+                          ),
+                        ),
                       ),
                     ),
                   ),

@@ -6,8 +6,6 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'dart:io';
 
-import 'home_page.dart';
-
 class Addvan extends StatefulWidget {
   const Addvan({super.key});
 
