@@ -9,6 +9,7 @@ import 'package:vanapp/addvan.dart';
 // ignore: unused_import
 import 'package:vanapp/map.dart';
 import 'package:vanapp/arrivalentry.dart';
+import 'package:vanapp/routeno.dart';
 import 'package:vanapp/routesheet.dart';
 import 'package:vanapp/vandetails.dart';
 
@@ -154,6 +155,23 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                     ListTile(
                       leading: const Icon(Icons
+                          .directions_bus), // Replace Icons.directions_car with the desired icon
+                      title: const Text('Route No'),
+                      titleTextStyle:
+                          const TextStyle(fontSize: 16, color: Colors.black),
+                      onTap: () {
+                        Navigator.pop(context);
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => RouteNo(),
+                          ),
+                        );
+                        // Close the drawer after navigating
+                      },
+                    ),
+                    ListTile(
+                      leading: const Icon(Icons
                           .directions_bus_filled_sharp), // Replace Icons.person with the desired icon
                       title: const Text('Add Van'),
                       titleTextStyle:
@@ -180,7 +198,9 @@ class _MyHomePageState extends State<MyHomePage> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const Vandetails(),
+                            builder: (context) => const Vandetails(
+                              routeNumber: 1,
+                            ),
                           ),
                         );
                         // Add the functionality you want when this end drawer item is tapped.

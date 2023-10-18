@@ -1,4 +1,4 @@
-// ignore_for_file: unused_field, sort_child_properties_last
+// ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
@@ -17,7 +17,9 @@ class _AddDriverState extends State<AddDriver> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
   // Define variables to hold form data
+  // ignore: unused_field
   String _name = '';
+  // ignore: unused_field
   String _email = '';
   final List<File?> _images =
       List.generate(3, (_) => null); // List to store the uploaded images
@@ -223,6 +225,7 @@ class _AddDriverState extends State<AddDriver> {
                                     ElevatedButton(
                                       onPressed: () => _pickImage(
                                           0), // Call _pickImage with index 0
+                                      // ignore: sort_child_properties_last
                                       child: const Text(
                                         'Photo',
                                         style: TextStyle(

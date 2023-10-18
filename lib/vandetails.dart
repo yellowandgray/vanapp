@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Vandetails extends StatelessWidget {
-  const Vandetails({super.key});
+  const Vandetails({super.key, required this.routeNumber});
+  final int routeNumber;
 
   @override
   Widget build(BuildContext context) {
@@ -62,21 +63,24 @@ class Vandetails extends StatelessWidget {
                                   width:
                                       8), // Add some spacing between the icon and text
                               RichText(
-                                text: const TextSpan(
-                                  style: TextStyle(
+                                text: TextSpan(
+                                  style: const TextStyle(
                                     fontSize: 16,
                                     color: Colors.black,
                                   ),
                                   children: <TextSpan>[
-                                    TextSpan(
+                                    const TextSpan(
                                       text: 'Route No: ',
                                       style: TextStyle(
-                                          fontWeight: FontWeight.bold),
+                                        fontWeight: FontWeight.bold,
+                                      ),
                                     ),
                                     TextSpan(
-                                      text: '1',
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.normal),
+                                      text: routeNumber
+                                          .toString(), // Use the routeNumber parameter
+                                      style: const TextStyle(
+                                        fontWeight: FontWeight.normal,
+                                      ),
                                     ),
                                   ],
                                 ),
@@ -321,8 +325,8 @@ class Vandetails extends StatelessWidget {
   }
 }
 
-void main() {
-  runApp(const MaterialApp(
-    home: Vandetails(),
-  ));
-}
+// void main() {
+//   runApp(const MaterialApp(
+//     home: Vandetails(),
+//   ));
+// }

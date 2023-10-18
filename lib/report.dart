@@ -35,8 +35,9 @@ class _MyHomePageState extends State<Reportpage> {
                 onTap: () {
                   // Navigate to the van details page when the container is tapped
                   Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) =>
-                        const Vandetails(), // Replace with the actual page you want to navigate to
+                    builder: (context) => const Vandetails(
+                      routeNumber: 1,
+                    ), // Replace with the actual page you want to navigate to
                   ));
                 },
                 child: Container(
