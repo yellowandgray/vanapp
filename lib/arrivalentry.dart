@@ -250,34 +250,24 @@ class _MyTableState extends State<MyTable> {
                           ),
                         ])),
                     Expanded(
-                      flex: 3,
-                      child: DropdownButtonFormField<String>(
-                        value: selectedValuesss,
-                        onChanged: (String? newValue) {
-                          setState(() {
-                            selectedValuesss = newValue;
-                          });
-                          textController6.text = newValue!;
-                        },
-                        items: dropdownOptionss.map((String value) {
-                          return DropdownMenuItem<String>(
-                            value: value,
-                            child: Text(value),
-                          );
-                        }).toList(),
-                        decoration: InputDecoration(
-                          labelText: 'Select',
-                          isDense: true,
-                          contentPadding: const EdgeInsets.symmetric(
-                            horizontal: 12.0,
-                            vertical: 14.0,
-                          ),
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(4.0),
-                          ),
-                        ),
-                      ),
-                    ),
+  flex: 3,
+  child: TextFormField(
+    controller: textController6,
+    readOnly: true, // To make it non-editable
+    decoration: InputDecoration(
+      labelText: '', // Set your label text here
+      isDense: true,
+      contentPadding: const EdgeInsets.symmetric(
+        horizontal: 12.0,
+        vertical: 14.0,
+      ),
+      border: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(4.0),
+      ),
+    ),
+  ),
+),
+
                   ],
                 ),
                 const SizedBox(height: 10),
@@ -556,7 +546,7 @@ class _MyTableState extends State<MyTable> {
                                   ),
                                 ),
                               ),
-                              const SizedBox(width: 8),
+                              const SizedBox(width: 0),
                               Image.asset('img/driver1.png',
                                   width: 30, height: 30),
                               const SizedBox(width: 8),
@@ -572,11 +562,33 @@ class _MyTableState extends State<MyTable> {
                                 ),
                               ),
                               const SizedBox(width: 8),
-                              Image.asset('img/clock.png',
+                               Image.asset('img/shirt.png',
                                   width: 30, height: 30),
                               const SizedBox(width: 8),
                               Expanded(
+                                
+                               child: Text(
+    '${rowData[4]}',
+    style: TextStyle(
+      fontSize: 16,
+      fontWeight: FontWeight.bold,
+      color: rowData[4] == 'Yes' ? Colors.green : Colors.red,
+    ),
+  ),
+                              ),
+                            ],
+                          ),
+                          const SizedBox(height: 10),
+                          Row(
+                            children: [
+                             
+                               Image.asset('img/clock.png',
+                                  width: 30, height: 30),
+                              const SizedBox(width: 8),
+                              Expanded(
+                                 flex: 1,
                                 child: Text(
+                                
                                   // ignore: unnecessary_string_interpolations
                                   '${rowData[2]}',
                                   style: const TextStyle(
@@ -586,52 +598,58 @@ class _MyTableState extends State<MyTable> {
                                   ),
                                 ),
                               ),
-                            ],
-                          ),
-                          const SizedBox(height: 10),
-                          Row(
-                            children: [
-                              Expanded(
-                                flex: 2,
-                                child: Text(
-                                  'Uniform: ${rowData[4]}',
-                                  style: const TextStyle(
-                                    fontSize: 16, // Increase the font size
-                                    fontWeight:
-                                        FontWeight.bold, // Make the text bold
-                                  ),
-                                ),
-                              ),
-                              const SizedBox(width: 8),
+                              const SizedBox(width: 19),
                               Image.asset('img/girl.png',
                                   width: 30, height: 30),
                               const SizedBox(width: 8),
-                              Expanded(
-                                child: Text(
-                                  // ignore: unnecessary_string_interpolations
-                                  '${rowData[3]}',
-                                  style: const TextStyle(
-                                    fontSize: 16, // Increase the font size
-                                    fontWeight:
-                                        FontWeight.bold, // Make the text bold
-                                  ),
-                                ),
-                              ),
+                             Expanded(
+  child: Text(
+    '${rowData[3]}',
+    style: TextStyle(
+      fontSize: 16,
+      fontWeight: FontWeight.bold,
+      color: rowData[3] == 'Yes' ? Colors.green : Colors.red,
+    ),
+  ),
+),
+
                               const SizedBox(width: 8),
                               Image.asset('img/notepad.png',
                                   width: 30, height: 30),
                               const SizedBox(width: 8),
-                              Expanded(
-                                child: Text(
-                                  // ignore: unnecessary_string_interpolations
-                                  '${rowData[5]}',
-                                  style: const TextStyle(
-                                    fontSize: 16, // Increase the font size
-                                    fontWeight:
-                                        FontWeight.bold, // Make the text bold
-                                  ),
-                                ),
-                              ),
+                             Expanded(
+  child: GestureDetector(
+    onTap: () {
+      showDialog(
+        context: context,
+        builder: (BuildContext context) {
+          return AlertDialog(
+            title: Text("Remarks"),
+            content: Text('${rowData[5]}'),
+            actions: <Widget>[
+              TextButton(
+                child: Text("Close"),
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
+              ),
+            ],
+          );
+        },
+      );
+    },
+   child: Text(
+      '${rowData[5]}',
+      style: const TextStyle(
+        fontSize: 16,
+        fontWeight: FontWeight.bold,
+      ),
+      maxLines: 1, // Set to 1 line
+      overflow: TextOverflow.ellipsis,
+    ),
+  ),
+),
+
                             ],
                           ),
                           const SizedBox(height: 12),
